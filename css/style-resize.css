@@ -1,0 +1,77 @@
+.splitpanes__pane {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+    min-height: 100px;
+    min-width: 1px;
+}
+
+em.specs {
+    font-size: 0.2em;
+    line-height: 1;
+    position: absolute;
+    color: #bbb;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 5em;
+}
+
+p {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #666;
+    z-index: 10;
+    font-size: 12px;
+}
+
+p a {
+    color: inherit;
+}
+
+button {
+    left: 0px;
+    bottom: 0px;
+    width: 10px;
+    height: 100%;
+    color: white;
+    padding: 0;
+    border: none;
+    position: absolute;
+    text-align: center;
+    background-color: floralwhite;
+}
+
+h {
+    color: black;
+    position: absolute;
+
+}
+
+#rpanrResize {
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: #1b1b51;
+    width: 0.2rem;
+    cursor: col-resize;
+    margin: 0 0 0 auto;
+}

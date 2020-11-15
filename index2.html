@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Splitpanes for Vue JS</title>
+    <link rel='stylesheet' href='https://unpkg.com/splitpanes/dist/splitpanes.css'>
+    <link rel="stylesheet" href="css/style-resize.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <splitpanes class="default-theme">
+            <pane min-size="0,5" v-if="!mobile">
+                <splitpanes class="default-theme" horizontal="horizontal">
+                    <pane>1<br /><em class="specs">I have a min height of 100px</em></pane>
+                    <pane>2<br /><em class="specs">I have a min height of 100px</em></pane>
+                </splitpanes>
+            </pane>
+            <pane min-size="0,5">
+                <splitpanes class="default-theme" horizontal="horizontal">
+                    <pane>
+                        <button @click="mobile = !mobile">
+                            <h>{{ mobile ? '&#9658;' : '&#9668;' }}</h>
+                        </button>
+                        3<br />
+                        <em class="specs">I have a min height of 100px</em>
+                    </pane>
+                    <pane> 
+                        <button @click="mobile = !mobile">
+                            <h>{{ mobile ? '&#9658;' : '&#9668;' }}</h>
+                        </button>4<br />
+                        <em class="specs">I have a min height of 100px</em>
+                    </pane>
+                </splitpanes>
+            </pane>
+        </splitpanes>
+    </div>
+    <script src='https://unpkg.com/vue'></script>
+    <script src='https://unpkg.com/splitpanes@latest/dist/splitpanes.umd.min.js'></script>
+    <script src="js/resize.js"></script>
+
+</body></html>

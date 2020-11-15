@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String Generator</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.4.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.3/knockout.validation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ui-contextmenu/1.18.1/jquery.ui-contextmenu.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel='stylesheet' href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <div id="form">
+        <h2>String Generator</h2>
+        <div class="option">
+            <div class="long-value-input" data-bind="text: resultValue" id="result">
+            </div>
+
+            <div class="option">
+                <label>String length</label>
+                <input data-bind="value: lenghtValue" type="number" id="length" />
+            </div>
+            <div class="option">
+                <label>Include lowercase letters</label>
+                <input data-bind="checked: lowercaseValue" type="checkbox" id="lowercase" />
+            </div>
+            <div class="option">
+                <label>Include uppercase letters</label>
+                <input data-bind="checked: uppercaseValue" type="checkbox" id="uppercase" />
+            </div>
+            <div class="option">
+                <label>Include symbols</label>
+                <input data-bind="checked: symbolsValue" type="checkbox" id="symbols" />
+            </div>
+            <div class="option">
+                <label>Include numbers</label>
+                <input data-bind="checked: numbersValue" type="checkbox" id="numbers" />
+            </div>
+            <button data-bind="click: generate" id="generate">Generate string</button>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/generator.js"></script>
+        <script src="js/popupMenu.js"></script>
+        </div>
+</body>
+
+</html>
